@@ -1,0 +1,105 @@
+body {
+            font-family: Roboto,arial;
+            text-align: center;
+            background-color: f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: rgb(51, 51, 51);
+        }
+
+       .array-bar {
+            width: 20px;
+            background-color: black ;
+            margin: 0 2px;
+            display: inline-block;
+        }
+        button{
+            
+            margin: 4px 8px;
+            margin-top:40px;
+            border: solid;
+            border-width: 1px;
+            border-radius: 4px;
+            font-size: 20px;
+            padding: 4px 8px;
+            color: white;
+            background-color: rgb(51, 51, 51);
+        }
+        .array-class{
+            display: flex;
+            padding :20px 40px;
+            
+            margin-top: 0px;
+        }
+        #array {
+            margin: 20px auto;
+            border: solid;
+            padding: 20px 40px;
+        }
+        header {
+            background: rgb(51, 51, 51);
+            color: #fff;
+            padding: 1em 0;
+            /* text-align: center; */
+            /* margin: 0; */
+        }
+        h1 {
+            margin: 0;
+            font-size: 50px;
+        }
+        
+        main {
+            padding: 1em;
+            max-width: 1200px;    
+            margin: 0 auto;
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            /* align-items: start; */
+        }
+        section{
+            border: solid;
+            border-width: 1px;
+            padding: 10px 20px;
+            margin-left:10px;
+            flex: 1;
+        }
+        .bubble-sort,.insertion-sort,.selection-sort{
+            flex: 1;
+        }
+        h2 {
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: start;
+        }
+        h3{
+            margin: 0;
+            padding: 0;
+            text-align: start;
+        }
+        .pointers{
+            display: flex;
+            flex-direction: column;
+        }
+        .pointers li{
+            text-align: start;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* .visual-aid img {
+            max-width: 100%;
+            height: auto;
+        } */
+        
+        pre {
+            background: #eee;
+            padding: 1em;
+            overflow-x: auto;
+        }
+        .bubble_desc, .insertion_desc, .selection_desc{
+            /* border: solid; */
+            text-align: start;
+            width: 350px;
+        }

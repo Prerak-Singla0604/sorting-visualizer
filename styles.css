@@ -1,105 +1,112 @@
 body {
-            font-family: Roboto,arial;
+            font-family: Roboto, arial;
             text-align: center;
-            background-color: f4f4f4;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            color: rgb(51, 51, 51);
+            color: #333;
         }
 
-       .array-bar {
-            width: 20px;
-            background-color: black ;
+        .array-bar {
+            width: 40px;
+            background-color: black;
             margin: 0 2px;
             display: inline-block;
+            vertical-align: bottom;
         }
-        button{
-            
+
+        .array-bar.comparing {
+            background-color: red;
+        }
+
+        .array-bar.swapping {
+            background-color: blue;
+        }
+
+        button {
             margin: 4px 8px;
-            margin-top:40px;
-            border: solid;
-            border-width: 1px;
+            margin-top: 20px;
+            border: none;
             border-radius: 4px;
-            font-size: 20px;
-            padding: 4px 8px;
+            font-size: 16px;
+            padding: 8px 16px;
             color: white;
             background-color: rgb(51, 51, 51);
+            cursor: pointer;
         }
-        .array-class{
-            display: flex;
-            padding :20px 40px;
-            
-            margin-top: 0px;
-        }
+
         #array {
             margin: 20px auto;
-            border: solid;
-            padding: 20px 40px;
+            padding: 10px 50px;
+            width: fit-content;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
         }
+
         header {
             background: rgb(51, 51, 51);
             color: #fff;
             padding: 1em 0;
-            /* text-align: center; */
-            /* margin: 0; */
         }
+
         h1 {
             margin: 0;
-            font-size: 50px;
+            font-size: 36px;
         }
-        
+
         main {
             padding: 1em;
-            max-width: 1200px;    
+            max-width: 1200px;
             margin: 0 auto;
             background: #fff;
             display: flex;
-            justify-content: space-between;
-            /* align-items: start; */
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
-        section{
-            border: solid;
-            border-width: 1px;
-            padding: 10px 20px;
-            margin-left:10px;
-            flex: 1;
+
+        section {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 300px;
+            text-align: left;
         }
-        .bubble-sort,.insertion-sort,.selection-sort{
-            flex: 1;
-        }
+
         h2 {
+            margin-top: 0;
+            font-size: 24px;
             color: #333;
-            margin: 0;
-            padding: 0;
-            text-align: start;
         }
-        h3{
-            margin: 0;
-            padding: 0;
-            text-align: start;
+
+        p {
+            margin-bottom: 10px;
         }
-        .pointers{
-            display: flex;
-            flex-direction: column;
-        }
-        .pointers li{
-            text-align: start;
-            margin: 0;
-            padding: 0;
-        }
-        
-        /* .visual-aid img {
-            max-width: 100%;
-            height: auto;
-        } */
-        
+
         pre {
-            background: #eee;
-            padding: 1em;
+            background: #f9f9f9;
+            padding: 10px;
             overflow-x: auto;
+            font-size: 14px;
         }
-        .bubble_desc, .insertion_desc, .selection_desc{
-            /* border: solid; */
-            text-align: start;
-            width: 350px;
+
+        ul {
+            margin-top: 0;
+            padding-left: 20px;
+        }
+
+        .slider-container {
+            margin: 20px 0;
+            text-align: center;
+            display: block;
+        }
+
+        .slider-label {
+            display: block;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        .slider {
+            width: 200px;
         }

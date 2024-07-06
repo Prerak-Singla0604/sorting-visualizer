@@ -1,2 +1,3 @@
-This is a web-based sorting visualizer built using HTML, CSS, and JavaScript. It provides a visual representation of how different sorting algorithms work,
-making it easier to understand their processes and efficiencies
+Interactive Sorting Algorithm Visualizer
+
+Sorting Visualizer is an interactive web application that helps users understand and visualize various sorting algorithms. This app is designed to be an educational tool for students, educators, and enthusiasts who want to learn and explore different sorting techniques.

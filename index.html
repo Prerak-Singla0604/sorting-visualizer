@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sorting Visualizer</h1>
+    </header>
+    <main>
+        
+        <button id="generate-array">Generate Array</button>
+        <button id="insertion-sort">Insertion Sort</button>
+        <button id="bubble-sort">Bubble Sort</button>
+        <button id="selection-sort">Selection Sort</button>
+        <div class="middle-container">
+            <div id="array"></div>
+        <div class="slider-container">
+            <label class="slider-label" for="speed">Animation Speed:</label>
+            <input type="range" id="speed" class="slider" min="10" max="200" value="100">
+        </div>
+        </div>
+        <section id="flex">
+            <section id="bubble-section">
+                <h2>Bubble Sort</h2>
+                <p>
+                    Bubble sort is a simple sorting algorithm. This sorting algorithm is comparison-based 
+                    algorithm in which each pair of adjacent elements is compared and the elements are swapped 
+                    if they are not in order. This algorithm is not suitable for large data sets as its average
+                     and worst case complexity are of O(n2) where n is the number of items.
+                </p>
+                <h3>Time Complexity:</h3>
+                <ul>
+                    <li>Best: O(n)</li>
+                    <li>Average: O(n^2)</li>
+                    <li>Worst: O(n^2)</li>
+                </ul>
+                <h3>Code Snippet (JavaScript):</h3>
+                <pre><code>
+    function bubbleSort() {
+        let len = array.length;
+        for (let i = 0; i < len; i++) {
+            for (let j = 0; j < len - i - 1; j++) {
+                if (array[j] > array[j + 1]) {
+                    [array[j], array[j + 1]] = [array[j + 1], array[j]];
+                    updateArray();
+                }
+            }
+        }
+    }
+                </code></pre>
+                <h3>References:</h3>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Bubble_sort">Bubble Sort - Wikipedia</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/bubble-sort/">Bubble Sort - GeeksforGeeks</a></li>
+                </ul>
+            </section>
+            <section id="insertion-section">
+                <h2>Insertion Sort</h2>
+                <p>
+                    Insertion sort is a simple sorting algorithm that works by iteratively inserting each element of an 
+                    unsorted list into its correct position in a sorted portion of the list. It is a stable sorting 
+                    algorithm, meaning that elements with equal values maintain their relative order in the sorted output.
+
+                    Insertion sort is like sorting playing cards in your hands. You split the cards into two groups: the
+                     sorted cards and the unsorted cards. Then, you pick a card from the unsorted group and
+                     put it in the right place in the sorted group.
+                </p>
+                <h3>Time Complexity:</h3>
+                <ul>
+                    <li>Best: O(n)</li>
+                    <li>Average: O(n^2)</li>
+                    <li>Worst: O(n^2)</li>
+                </ul>
+                <h3>Code Snippet (JavaScript):</h3>
+                <pre><code>
+    function insertionSort() {
+        let len = array.length;
+        for (let i = 1; i < len; i++) {
+            let key = array[i];
+            let j = i - 1;
+            while (j >= 0 && array[j] > key) {
+                array[j + 1] = array[j];
+                j--;
+            }
+            array[j + 1] = key;
+            updateArray();
+        }
+    }
+                </code></pre>
+                <h3>References:</h3>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Insertion_sort">Insertion Sort - Wikipedia</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/insertion-sort/">Insertion Sort - GeeksforGeeks</a></li>
+                </ul>
+            </section>
+            <section id="selection-section">
+                <h2>Selection Sort</h2>
+                <p>
+                    Selection sort is an in-place comparison sorting algorithm. It divides the input list
+                    into two parts: a sorted sublist of items which is built up from left to right at the
+                    front (left) of the list, and a sublist of the remaining unsorted items that occupy the
+                    rest of the list.
+                </p>
+                <h3>Time Complexity:</h3>
+                <ul>
+                    <li>Best: O(n^2)</li>
+                    <li>Average: O(n^2)</li>
+                    <li>Worst: O(n^2)</li>
+                </ul>
+                <h3>Code Snippet (JavaScript):</h3>
+                <pre><code>
+    function selectionSort() {
+        let len = array.length;
+        for (let i = 0; i < len - 1; i++) {
+            let minIdx = i;
+            for (let j = i + 1; j < len; j++) {
+                if (array[j] < array[minIdx]) {
+                    minIdx = j;
+                }
+            }
+            [array[i], array[minIdx]] = [array[minIdx], array[i]];
+            updateArray();
+        }
+    }
+                </code></pre>
+                <h3>References:</h3>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Selection_sort">Selection Sort - Wikipedia</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/selection-sort/">Selection Sort - GeeksforGeeks</a></li>
+                </ul>
+            </section>
+        </section>
+        
+    </main>
+    <script src="script.js">
+    </script>
+</body>
+</html>

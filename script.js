@@ -3,7 +3,7 @@ let array = [];
         let speed = 100;
 
         document.getElementById("speed").addEventListener("input", function() {
-            speed = this.value;
+            speed = 200-this.value;
         });
 
         function generateArray() {
